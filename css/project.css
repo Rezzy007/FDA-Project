@@ -1,0 +1,652 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+      /* Navbar */
+
+.nav-bar{
+    background-color: #018ABE;
+    color: #fff;
+    width: 100%;
+    padding: 10px 100px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    top: 0;
+    position: fixed;
+    z-index: 100;
+}
+
+.nav-bar .brand{
+    text-align: center;
+}
+.nav-bar .brand img{
+    width: 120px;
+    height: 32px;
+}
+
+.nav-bar .brand span{
+    font-size: 16px;
+    text-align: left;
+    display: block;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-top: 20px;
+}
+
+.nav-links a{
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.nav-links a:hover::before{
+    content: '';
+    height: 4px;
+    width: 100px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 10px;
+    border-radius: 10px;
+}
+
+.button{
+    margin-top: 15px;
+}
+
+.button a{
+    width: 100px;
+    padding: 5px 20px;
+    color: #fff;
+    text-decoration: none;
+    border: solid #fff;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.button a:hover{
+    background: #fff;
+    color: #018ABE;
+}
+
+
+        /* Header */
+
+.landing{
+    background-image: url(../Images/Family\ img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    padding: 30px 100px;
+    margin-top: 75px;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.img-overlay{
+    width: 100%;
+    height: 600px;
+    background: #000;
+    opacity: .6;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.landing .left-col, .landing .right-col{
+    width: 50%;
+    z-index: 99;
+}
+
+.landing .left-col img{
+    height: 450px;
+    width: 450px;
+    margin-top: 40px;
+}
+
+.landing .right-col .services{
+    font-size: 20px;
+    margin-top: 30px;
+    line-height: 2.3em;
+}
+
+.landing .right-col .services p{
+    color: #fff;
+}
+
+.location{
+    margin-top: 50px;
+}
+
+.location img{
+    width: 60px;
+    height: 60px;
+    position: relative;
+    top: 24px;
+    left: 8px;
+}
+
+#state, #LGA, #country, .search-doctor{
+    height: 40px;
+    width: 110px;
+    background: #fff;
+    color: #141414;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 0 10px;
+    outline: none;
+    border: 0;
+    position: relative;
+}
+
+#state{
+    right: 2px;
+}
+
+#LGA{
+    right: 5px;
+    z-index: 90;
+}
+
+.search-doctor{
+    width: 135px;
+    height: 42.5px;
+    background: #fe500e;
+    color: #fff;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 18px !important;
+    position: relative;
+    right: 7px;
+}
+
+.search-doctor a{
+    text-decoration: none;
+    color: #fff;
+}
+
+       /* Section 1 */
+
+.section1{
+    text-align: center;
+    margin: 20px 100px;
+}
+
+.title-container{
+    display: flex;
+    margin: auto;
+    margin-top: 80px;
+}
+
+.section1 .triangle{
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid #97cad8;
+    transform: rotate(90deg);
+    margin: auto;
+    position: relative;
+    left: 21.5%;
+    z-index: 98;
+}
+
+.section1 .title-container h1{
+    background: #02457A;
+    color: #fff;
+    width: 350px;
+    height: 100px;
+    margin: auto;
+    padding-left: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: 200px;
+}
+
+.section1 .section1-content{
+    margin: 0 100px;
+    margin: auto;
+    width: 100%;
+    display: flex;
+}
+
+.section1 .section1-content .triangle1{
+    width: 0;
+    height: 0;
+    margin: auto;
+    border-left: 140px solid transparent;
+    border-right: 140px solid transparent;
+    border-bottom: 110px solid #97cad8;
+    transform: rotate(180deg);
+    position: relative;
+    top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 97;
+}
+
+.section1 .section1-content .triangle1 h2{
+    text-align: center;
+    transform: rotate(180deg);
+    position: relative;
+    font-size: 20px;
+    top: 75px;
+    color: #141414;
+}
+
+.section1 .section1-content p{
+    background: #02457A;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 20px;
+    border: 1px solid transparent;
+    height: 380px;
+    width: 280px;
+    margin: 10px;
+    padding-top: 42%;
+    position: relative;
+    bottom: 50px;
+    line-height: 1.5em;
+}
+
+        /* Section 2 */
+
+.section2{
+    background: url(../Images/medical\ doc.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    position: relative;
+    height: 1400px;
+    width: 100%;
+    margin-top: 70px;
+}
+
+.section2 .img-overlay2{
+    width: 100%;
+    height: 1400px;
+    background: #001B4B;
+    opacity: .5;
+    position: absolute;
+    left: 0;
+}
+
+.section2 .cards{
+    width: 80%;
+    margin: 0 100px;
+    margin-top: 80px;
+}
+
+.section2 .card1, .card2{
+    display: flex;
+    width: 70%;
+    padding: 15px;
+    background: #fff;
+    border: 10px solid #fe500e;
+    border-radius: 20px;
+    position: relative;
+}
+
+.section2 .card1, .card2 p{
+    font-size: 16px;
+    line-height: 1.5em;
+}
+
+.section2 .card1 img{
+    height: 250px;
+    width: 350px;
+}
+
+.section2 .card1 h2, p{
+    padding: 0 20px;
+    color: #141414;
+}
+
+.section2 .card1 h2{
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 1.5em;
+}
+
+.section2 .card1{
+    top: 80px;
+    left: 40%;
+    margin-bottom: 80px;
+}
+
+.section2 .card2 img{
+    height: 250px;
+    width: 350px;
+}
+
+.section2 .card2 h2, p{
+    padding: 0 20px;
+    color: #141414;
+}
+
+.section2 .card2 h2{
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 1.5em;
+}
+
+.section2 .card2{
+    top: 80px;
+    margin-bottom: 80px;
+    position: relative;
+}
+
+        /* Section 3 */
+
+.section3{
+    margin: 0 100px;
+    margin-top: 80px;
+    text-align: center;
+}
+
+.section3 .section3-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.section3 .section3-title img{
+    width: 220px;
+    height: 220px;
+    border: 2px solid #001B4B;
+    border-radius: 50%;
+}
+
+.section3 .section3-title h1{
+    padding: 20px;
+    color: #141414;
+    font-size: 28px;
+}
+
+.section3 p{
+    margin: auto;
+    margin-top: 60px;
+    line-height: 1.5em;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.section3 .doctors{
+    margin: 0 100px;
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+
+.section3 .doctors img{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 2px solid #001B4B;
+    position: relative;
+    margin: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.section3-button{
+    background: #fe500e;
+    padding: 10px 20px;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+
+.section3 a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+       /* Section 4 */
+       
+.section4{
+    background-image: url(../Images/Hero\ Image2.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 650px;
+    margin-top: 100px;
+    position: relative;
+}
+
+.img-overlay3{
+    width: 100%;
+    height: 650px;
+    background: #000;
+    opacity: .6;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.section4 .section4-content{
+    display: flex;
+    margin: 0 100px;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 80px;
+}
+
+.section4 .section4-content img{
+    width: 800px;
+    height: 500px;
+    margin-left: 40px;
+}
+
+.section4 .section4-content h1{
+    width: 300px;
+    padding: 20px;
+    margin: 20px;
+    color: #fff;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 2.5em;
+    word-spacing: 5px;
+}
+
+.section4 .section4-content span{
+    font-weight: 400;
+    font-size: 24px;
+    font-style: italic;
+}
+
+
+/* Footer */
+
+.footer{
+    text-align: center;
+    background-color: #edf6f8;
+    overflow: hidden;
+}
+
+.footer img{
+    width: 250px;
+    height: 60px;
+    margin-top: 40px;
+}
+
+.footer-col{
+    width: 90%;
+    margin: auto 50px;
+    margin-top: 30px;
+    display: flex;
+    text-align: left;
+}
+
+.footer-row{
+    display: flex;
+    width: 80%;
+    margin: 0 5px;
+}
+
+.footer-row i{
+    padding: 0 30px;
+    margin-top: 5px;
+}
+
+.footer-col h4{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-row h4::before{
+    content: '';
+    height: 4px;
+    width: 100px;
+    background-color: #fe500e;
+    position: absolute;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+
+.footer-row span{
+    line-height: 1.7em;
+    font-weight: 400;
+    position: relative;
+    top: 20px;
+    color: #141414;
+}
+
+.footer-row .social-links a{
+    text-decoration: none;
+    right: 10px;
+    position: relative;
+    margin: -20px;
+    top: 25px;
+    color: #02457A;
+}
+
+.footer hr{
+    margin-top: 45px;
+    margin-bottom: 20px;
+}
+
+
+        /* Find a Doctor Page */
+
+.doc-profile, .doc-profile2, .doc-profile3{
+    height: 450px;
+    margin: auto 100px;
+    margin-top: 50px;
+    display: flex;
+}
+
+.doc-profile2, .doc-profile3{
+    margin-top: 20px;
+}
+
+.profile{
+    width: 80%;
+    margin: 0 20px;
+    margin: 40px 30px;
+    text-align: left;
+}
+
+.profile img{
+    height: 150px;
+    width: 150px;
+    border: 2px solid #018ABE;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.profile h2{
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.profile span{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.profile h3{
+    text-align: left;
+    line-height: 28px;
+}
+
+.profile hr{
+    margin: 20px auto;
+}
+
+.direction{
+    display: flex;
+}
+
+.direction div{
+    margin-top: -20px;
+}
+
+.direction h2{
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.direction p{
+    position: relative;
+    margin-top: 10px;
+    right: 20px;
+}
+
+.rating{
+    position: relative;
+    top: 25px;
+    color: #02457A;
+}
+
+.direction p, .rating p{
+    font-size: 14px;
+    font-weight: 400px;
+}
+
+.reviews a{
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.profile .bookapp-btn{
+    margin-top: 50px;
+    height: 40px;
+    width: 200px;
+    border: 1px solid transparent;
+    outline: none;
+    border-radius: 10px;
+    background: #fe500e;
+}
+
+.profile .bookapp-btn a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+}
+
+hr{
+    margin-top: 12%;
+}
