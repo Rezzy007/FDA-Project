@@ -82,7 +82,11 @@
         border-top: 0;
         border-bottom: 1px solid #777;
         outline: none;
-        /* color: #141414; */
+    }
+
+    .input ::placeholder{
+        font-weight: 500;
+        font-size: 14px;
     }
     
     .submit-btn{

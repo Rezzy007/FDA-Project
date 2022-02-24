@@ -617,7 +617,7 @@
 .doc-profile, .doc-profile2, .doc-profile3{
     height: 450px;
     margin: auto 100px;
-    margin-top: 50px;
+    margin-top: 60px;
     display: flex;
 }
 
@@ -630,6 +630,13 @@
     margin: 0 20px;
     margin: 40px 30px;
     text-align: left;
+}
+
+.profile .profile-title{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 500px;
 }
 
 .profile img{
@@ -890,18 +897,14 @@ hr{
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
-    /* padding: 30px 100px; */
-    /* margin-top: 75px; */
     width: 100%;
-    /* display: flex;
-    /* position: relative; */ 
 }
 
 .img-overlay3{
     width: 100%;
     height: 100%;
-    background: #001B4B;
-    opacity: .7;
+    background: #000;
+    opacity: .6;
     position: absolute;
     top: 0;
     left: 0;
@@ -912,5 +915,34 @@ hr{
     justify-content: center;
     text-align: center;
     margin-top: 300px;
+    position: relative;
     z-index: 50;
+}
+
+.id input{
+    height: 40px;
+    width: 300px;
+    border: none;
+    outline: none;
+}
+
+.id button{
+    width: 200px;
+    height: 40px;
+    background-color: #fe500e;
+    border: none;
+}
+
+.id a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.id ::placeholder{
+    font-size: 18px;
+    font-weight: 600;
+    color: #141414;
+    padding: 0 10px;
 }
